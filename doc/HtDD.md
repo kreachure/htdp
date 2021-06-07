@@ -1,6 +1,9 @@
 # How to Design Data
 If [HtDF](HtDF.md) part contained a recipe only, this one contains more.
-The recipe is coming up for sure:
+The recipe is coming up for sure. And more.
+1. DtDD recipe
+2. An example
+3. Data structures
 
 ## Recipe
 
@@ -38,3 +41,10 @@ TLColor represents traffic light color.
   ))
 ```
 Note the `#;` - it comments out the whole following definition.
+
+# Data structures
+1. Simple atomic data
+2. Intervals
+3. Enumerations
+4. Itemizations
+5. Compound data (structures) 
