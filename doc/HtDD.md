@@ -5,10 +5,10 @@ The recipe is coming up for sure:
 ## Recipe
 
 1. Structure if any
-2. A type comment
-3. Interpretation
+2. [A type comment](#type-comment)
+3. [Interpretation](#interpretation)
 4. Examples
-5. Template function
+5. [Template function](#template-function)
 6. Template rules used
 
 ## Example
