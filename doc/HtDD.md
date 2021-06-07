@@ -46,7 +46,7 @@ Note the `#;` - it comments out the whole following definition.
 1. [Simple atomic data](#atomic-data)
 2. [Intervals](#intervals)
 3. [Enumerations](#enumeration)
-4. Itemizations
+4. [Itemizations](#itemization)
 5. Compound data (structures) 
 
 ### Atomic data
@@ -74,4 +74,22 @@ Template for this type is _condition_:
 (cond [Question Answer]
         [Question Answer]
         [Question Answer]))
+```
+
+### Itemization
+...or classification. 
+Like _enumeration_, it's a _one of_ choice. 
+Though here inside the chosen position, we'll need to work with data further.
+A good example is three proximity distances for a radar:
+
+```racket
+;; Radar proximity is one of:
+;; - Number[0, 5) is "close"
+;; - Number[5, 30] is "near"
+;; - Number[> 30] is "far"
+;; So template is:
+(define (fn-for-radar-proximity p)
+  (cond [(and (>= p 0) (< p 5)) (... p)]
+        [(and (>= p 5) (<= p 30)) (... p)]
+        [else (... p)])
 ```
