@@ -43,8 +43,35 @@ TLColor represents traffic light color.
 Note the `#;` - it comments out the whole following definition.
 
 ## Data structures
-1. Simple atomic data
-2. Intervals
-3. Enumerations
+1. [Simple atomic data](#atomic-data)
+2. [Intervals](#intervals)
+3. [Enumerations](#enumeration)
 4. Itemizations
 5. Compound data (structures) 
+
+### Atomic data
+Atomic data has no structure, it's _atomic_: a speed of a car, a hight of a plane, a name of a cat.
+Atomic data can be _distinct_ and _non-distinct_.
+#### Atomic non-distinct
+...is a continuum: plane height, cat age. So, we can't see all distinct values.
+For atomic non-distinct, we need `(... x)` template using the argument.
+
+#### Atomic distinct
+...like name of a city is a set of distinct values we can enumerate. 
+For atomic distinct, we don't need an argument, so the template is `(...)`.
+
+### Intervals
+Interval is a subset of _Atomic non-distinct_: Integer[0,10] is an _interval_, and it's also _atomic non-distinct_.
+
+So, for _intervals_ we use `(... x)` template.
+
+### Enumeration
+Enumeration is a **one of a kind** template.
+So, we are choosing a value from a fixed list of distinct values.
+Template for this type is _condition_:
+
+```racket
+(cond [Question Answer]
+        [Question Answer]
+        [Question Answer]))
+```
