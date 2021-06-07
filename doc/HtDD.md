@@ -93,3 +93,17 @@ A good example is three proximity distances for a radar:
         [(and (>= p 5) (<= p 30)) (... p)]
         [else (... p)])
 ```
+
+A better example is _itemization_ of different types of data:
+```racket
+;; DisplayControl can be either of:
+;; - ListBox has a list of items
+;; - Spinner has is an interval
+;; - Label is a String
+;; - None is none
+(define (fn-for-display-control ctr)
+  (cond [(is-listbox? ctr) (cond [...])] ; to continue cond inside listbox
+        [(is-spinner? ctr) (... ctr)]
+        [(string? ctr) (... ctr)]
+        [(is-none? ctr) (...)]))
+```
