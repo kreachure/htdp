@@ -13,3 +13,4 @@ See also [HtDD](HtDD.md) and [HtDF](HtDF.md).
     3. Functions using [HtDF](HtDF.md)
         1. Main first (based on 1.3, 1.4 and 2.2 above)
         2. Wishlist entries for big-bang options
+    3. Work through wishlist until done
