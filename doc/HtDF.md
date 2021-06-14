@@ -1,7 +1,7 @@
 # How to Design Functions
 
 This is the first part of the HtDP. 
-See [HtDD](HtDD.md) also!
+See [HtDD](HtDD.md) and [HtDF](HtDF.md) also!
 Follow this recipe:
 1. [Signature, purpose, stub](#signature-purpose-stub)
 2. [Examples as check-expect](#examples)
