@@ -14,3 +14,14 @@ See also [HtDD](HtDD.md) and [HtDF](HtDF.md).
         1. Main first (based on 1.3, 1.4 and 2.2 above)
         2. Wishlist entries for big-bang options
     3. Work through wishlist until done
+
+## Example
+### Sketch program scenarios
+![image](https://user-images.githubusercontent.com/85282521/121912300-260abd00-cd39-11eb-9cfa-4291c92c890b.png)
+
+### Build actual program:
+#### Constants
+#### Data definitions
+#### Functions using HtDF
+##### Main first
+##### Wishlist then
