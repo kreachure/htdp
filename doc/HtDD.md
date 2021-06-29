@@ -17,6 +17,14 @@ The recipe is coming up for sure. And more.
 ## Example
 TLColor represents traffic light color.
 
+### Structure for compound data
+```racket
+(define-struct player (fn ln))
+;; Player is (make-player String String)
+;; interp. (make-player fn ln) is a hockey player with
+;;    fn is first name
+;;    ln is last name
+```
 ### Type comment
 ```racket
 ;; TLColor is one of:
