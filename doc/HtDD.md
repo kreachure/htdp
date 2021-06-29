@@ -20,10 +20,6 @@ TLColor represents traffic light color.
 ### Structure for compound data
 ```racket
 (define-struct player (fn ln))
-;; Player is (make-player String String)
-;; interp. (make-player fn ln) is a hockey player with
-;;    fn is first name
-;;    ln is last name
 ```
 ### Type comment
 ```racket
@@ -55,7 +51,7 @@ Note the `#;` - it comments out the whole following definition.
 2. [Intervals](#intervals)
 3. [Enumerations](#enumeration)
 4. [Itemizations](#itemization)
-5. Compound data (structures) 
+5. [Compound data](#compound-data) (structures) 
 
 ### Atomic data
 Atomic data has no structure, it's _atomic_: a speed of a car, a hight of a plane, a name of a cat.
@@ -114,4 +110,18 @@ A better example is _itemization_ of different types of data:
         [(is-spinner? ctr) (... ctr)]
         [(string? ctr) (... ctr)]
         [(is-none? ctr) (...)]))
+```
+
+### Compound data
+Compound data is a structure like the following:
+```racket
+(define-struct player (fn ln))
+;; Player is (make-player String String)
+;; interp. (make-player fn ln) is a hockey player with
+;;    fn is first name
+;;    ln is last name
+;; Template:
+(define (fn-for-player p)
+  (... (player-fn p)    ; String
+       (player-ln p)))  ; String
 ```
