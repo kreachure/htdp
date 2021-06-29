@@ -7,7 +7,7 @@ The recipe is coming up for sure. And more.
 
 ## Recipe
 
-1. Structure if any
+1. [Structure](#structure-for-compound-data) if any
 2. [A type comment](#type-comment)
 3. [Interpretation](#interpretation)
 4. Examples
