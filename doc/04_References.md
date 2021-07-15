@@ -30,6 +30,11 @@
                (first los)    ; String
                (rest los))])) ; ListOfStrings
 
+;; Template rules used:
+;; One of: 2 cases
+;; -- atomic distinct: empty
+;; -- compound data
+
 ;; ================
 ;; Functions
 
