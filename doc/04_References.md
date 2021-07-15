@@ -54,3 +54,12 @@
           (contains-ubc? (rest los)))))
 
 ```
+# Well-formed self-referential data
+Well-formed self reference should have:
+* at least one base case
+* at leas one self reference case
+```racket
+;; ListOfString is one of: 2 cases
+;; - empty                             <-- base case
+;; - (cons ListOfString empty)         <-- self reference case
+```
