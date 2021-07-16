@@ -54,7 +54,7 @@
           (contains-ubc? (rest los)))))
 
 ```
-# Well-formed self-referential data
+## Well-formed self-referential data
 Well-formed self reference should have:
 * at least one base case
 * at least one self reference case
