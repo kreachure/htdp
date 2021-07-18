@@ -54,7 +54,7 @@
           (contains-ubc? (rest los)))))
 
 ```
-# Well-formed self-referential data
+## Well-formed self-referential data
 Well-formed self reference should have:
 * at least one base case
 * at least one self reference case
@@ -63,3 +63,6 @@ Well-formed self reference should have:
 ;; - empty                             <-- base case
 ;; - (cons ListOfString empty)         <-- self reference case
 ```
+# Reference
+## Goals
+* Be able to predict and identify correspondence between references in a data definition and helper function calls in functions that operate on the data
